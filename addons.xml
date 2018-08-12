@@ -1,0 +1,38 @@
+<addons>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.steadfasttv" name="SteadFast TV Repo" version="1.0" provider-name="AsToReY">
+	<extension point="xbmc.addon.repository" name="SteadFast TV Repo">
+		<info compressed="false">https://raw.githubusercontent.com/steadfasttv/repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/steadfasttv/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/steadfasttv/repo/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>SteadFast TV Repo</summary>
+		<description>Kodi Repository for SteadFast TV</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<?xml version="1.1" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.SteadFastTV"
+       name="SteadFast TV"
+       version="1.0"
+       provider-name="AsToReY">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Live Tv, Catchup and Video On Demand Brought to you by SteadFast TV</summary>
+    <language>en</language>
+    <description lang="en">SteadFast TV - Official Kodi Addon - Supplier of Great Quality and Stable Streams at affordable prices</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+</addons>
